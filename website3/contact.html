@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Ramsha Naimat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { primary: '#001637', secondary: '#106a62',
+        'secondary-container': '#a3f1e7', surface: '#f7f9fc' },
+      fontFamily: { inter: ['Inter', 'sans-serif'] }
+    }}};
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-surface text-slate-800 antialiased">
+<header class="fixed top-0 inset-x-0 z-50 bg-white/90 shadow-sm backdrop-blur-xl">
+  <div class="max-w-6xl mx-auto h-16 px-4 flex items-center justify-between gap-3">
+    <a href="index.html" class="font-bold text-primary">RN | Ramsha Naimat</a>
+    <nav class="hidden lg:flex gap-2 text-sm font-semibold">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="skills.html">Skills</a>
+      <a class="nav-link" href="education.html">Education</a>
+      <a class="nav-link" href="projects.html">Projects</a>
+      <a class="nav-link" href="experience.html">Experience</a>
+      <a class="nav-link active" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="pt-16">
+  <section class="section-pad">
+    <div class="max-w-6xl mx-auto">
+      <p class="eyebrow">Let's connect</p>
+      <h1 class="section-title">Contact Me</h1>
+      <p class="text-slate-500 mt-3 mb-8">
+        Feel free to contact me for student projects or learning opportunities.
+      </p>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <div class="card p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-secondary-container text-secondary flex items-center justify-center">
+              <span class="material-symbols-outlined">mail</span>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-slate-500 font-bold">Email Address</p>
+              <a class="font-semibold text-primary break-all" href="mailto:f25-adpcs-0012@qu.edu.pk">f25-adpcs-0012@qu.edu.pk</a>
+            </div>
+          </div>
+
+          <div class="card p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-secondary-container text-secondary flex items-center justify-center">
+              <span class="material-symbols-outlined">school</span>
+            </div>
+            <div>
+              <p class="text-xs uppercase tracking-wider text-slate-500 font-bold">University</p>
+              <p class="font-semibold text-primary">Qarshi University</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-6 sm:p-8">
+          <h2 class="text-xl font-bold text-primary mb-5">Send an Email</h2>
+          <form id="contact-form" class="space-y-4">
+            <div>
+              <label for="sender-name" class="block text-sm font-semibold text-primary mb-2">Your Name</label>
+              <input id="sender-name" name="sender-name" required class="form-control" placeholder="Enter your name">
+            </div>
+            <div>
+              <label for="sender-email" class="block text-sm font-semibold text-primary mb-2">Your Email</label>
+              <input id="sender-email" name="sender-email" type="email" required class="form-control" placeholder="you@example.com">
+            </div>
+            <div>
+              <label for="sender-message" class="block text-sm font-semibold text-primary mb-2">Message</label>
+              <textarea id="sender-message" name="sender-message" rows="4" required class="form-control" placeholder="Write your message"></textarea>
+            </div>
+            <button type="submit" class="w-full rounded-lg bg-secondary text-white px-5 py-3 font-semibold hover:bg-primary transition">
+              <span class="material-symbols-outlined align-middle">mail</span>
+              Open Email App
+            </button>
+            <p class="text-xs text-slate-500">
+              This button opens your email application with the message prepared; it does not send a message automatically.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-primary text-white px-4 py-8">
+  <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div><p class="font-bold text-lg">Ramsha Naimat</p><p class="text-sm text-slate-300">ADP Computer Science Student · Qarshi University</p></div>
+    <a href="mailto:f25-adpcs-0012@qu.edu.pk" class="text-sm text-teal-200">f25-adpcs-0012@qu.edu.pk</a>
+    <p class="text-xs text-slate-300">© <span id="year"></span> Ramsha Naimat</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

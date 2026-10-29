@@ -1,0 +1,98 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 82px;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+.section-pad {
+  padding: 5rem 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 18px rgba(23, 43, 77, 0.06);
+}
+
+.skill-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(23, 43, 77, 0.10);
+}
+
+.nav-link {
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  transition: background 0.2s ease;
+}
+
+.nav-link:hover {
+  background: #f1f5f9;
+}
+
+.nav-link.active {
+  background: #a3f1e7;
+  color: #1b7068;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #106a62;
+}
+
+.section-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #001637;
+  margin-top: 0.5rem;
+}
+
+.project-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #106a62;
+  font-weight: 700;
+}
+
+.tag {
+  background: #f1f5f9;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.form-control {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  background: #f7f9fc;
+  padding: 0.75rem 1rem;
+  outline: none;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 2px #106a62;
+}
+
+@media (max-width: 640px) {
+  .section-pad {
+    padding: 3.5rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
